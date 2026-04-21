@@ -1,0 +1,106 @@
+/* src/App.css */
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.task-form {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 2rem;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+.task-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.btn-add {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-add:hover {
+  background: #2563eb;
+  transform: scale(0.96);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.task-item {
+  background: #f8fafc;
+  margin-bottom: 0.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #3b82f6;
+  transition: 0.1s;
+}
+
+.task-item:hover {
+  background: #f1f5f9;
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.empty-message {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.task-counter {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  color: #475569;
+  font-weight: 500;
+}
